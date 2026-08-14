@@ -6,6 +6,6 @@ const extensionDir = dirname(fileURLToPath(import.meta.url));
 
 export default function xcodeSkills(pi: ExtensionAPI) {
   pi.on("resources_discover", () => ({
-    skillPaths: [join(extensionDir, "SKILL.md")],
+    skillPaths: [join(extensionDir, "..", "SKILL.md")],
   }));
 }

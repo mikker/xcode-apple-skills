@@ -1,7 +1,8 @@
 {
-  "name": "pi-xcode-apple-skills",
+  "name": "xcode-apple-skills",
   "version": "0.1.0",
   "private": true,
+  "description": "Agent-agnostic access to Apple-authored skills bundled with Xcode",
   "keywords": ["pi-package"],
   "pi": {
     "extensions": ["./extension/index.ts"]
