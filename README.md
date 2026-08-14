@@ -4,7 +4,5 @@ Exposes Apple-authored Xcode skills to Pi through one compact meta skill, keepin
 their generated descriptions out of the system prompt.
 
 ```sh
-git clone https://github.com/mikker/pi-xcode-apple-skills ~/dev/pi-xcode-apple-skills
-~/dev/pi-xcode-apple-skills/bootstrap.sh
-pi install ~/dev/pi-xcode-apple-skills
+pi install git:github.com/mikker/pi-xcode-apple-skills
 ```
