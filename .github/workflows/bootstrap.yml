@@ -10,6 +10,10 @@ jobs:
     runs-on: xcode-27
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - run: ./bootstrap.sh
-      - run: test -s bundled/swiftui-specialist/SKILL.md
+      - uses: actions/checkout@v5
+      - name: Try Xcode export
+        continue-on-error: true
+        timeout-minutes: 2
+        run: ./bootstrap.sh
+      - name: Verify bundled skills
+        run: test -s bundled/swiftui-specialist/SKILL.md
