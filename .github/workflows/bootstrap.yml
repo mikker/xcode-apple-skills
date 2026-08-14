@@ -1,0 +1,14 @@
+name: Bootstrap
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  bootstrap:
+    runs-on: xcode-27
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./bootstrap.sh
+      - run: test -s bundled/swiftui-specialist/SKILL.md
